@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+  </ion-header>
+  
+<div id ="wire">
+
+</div>
+  <div id="all">
+       
+       <div id="lefthand">
+        <div style="margin: auto;margin-top: 15px;">
+        <ion-button (click)="forward()"><ion-icon id="icon" name="caret-up-outline"></ion-icon></ion-button>
+        </div>
+
+        <div style="margin-top: -15px;margin-left: auto;margin-right: auto;">
+        <ion-button style="margin-right: 50px;" (click)="left()"><ion-icon id="icon" name="caret-back-outline"></ion-icon></ion-button>
+        <ion-button (click)="right()"><ion-icon id="icon" name="caret-forward-outline"></ion-icon></ion-button>
+        </div>
+
+        <div style="margin: auto;margin-top: -15px;">
+        <ion-button (click)="backward"><ion-icon id="icon" name="caret-down-outline"></ion-icon></ion-button>
+        </div>
+       </div>
+
+      <div id="middle">
+        <div id="m1" (click)="stop()"></div>
+        <div id="m2" (click) = "auto()"></div>
+      </div>
+
+       <div id="righthand">
+        <div style="margin: auto;margin-top: 15px;">
+        <ion-button (click)="up()"><ion-icon id="icon" name="triangle"></ion-icon></ion-button>
+        </div>
+
+        <div style="margin-top: -15px;margin-left: auto;margin-right: auto;">
+        <ion-button style="margin-right: 50px;" (click)="manual()"><ion-icon id="icon" name="square"></ion-icon></ion-button>
+        <ion-button (click)="auto()"><ion-icon id="icon" name="ellipse"></ion-icon></ion-button>
+        </div>
+
+        <div style="margin: auto;margin-top: -15px;">
+        <ion-button (click)="down()" on-release="up()"><ion-icon id="icone" name="close"></ion-icon></ion-button>
+        </div>
+       </div>
+  </div>
+  
+</ion-content>
